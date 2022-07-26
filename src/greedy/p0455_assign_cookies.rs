@@ -1,4 +1,4 @@
-pub fn find_content_children(children: &mut Vec<i32>, cookies: &mut Vec<i32>) -> u32 {
+pub fn find_content_children(children: &mut [u32], cookies: &mut [u32]) -> u32 {
     children.sort();
     cookies.sort();
     let mut child = 0;

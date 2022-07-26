@@ -1,6 +1,6 @@
 use std::cmp::max;
 
-pub fn candy(ratings: &mut Vec<u32>) -> u32 {
+pub fn candy(ratings: &mut [u32]) -> u32 {
     let n = ratings.len();
     if n < 2 {
         return n as u32;
@@ -22,7 +22,7 @@ pub fn candy(ratings: &mut Vec<u32>) -> u32 {
     total
 }
 
-pub fn candy2(ratings: &Vec<u32>) -> u32 {
+pub fn candy2(ratings: &[u32]) -> u32 {
     let n = ratings.len();
     if n < 2 {
         return n as u32;
