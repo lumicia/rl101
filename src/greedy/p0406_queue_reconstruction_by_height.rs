@@ -13,7 +13,7 @@ pub fn reconstruct_queue(people: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
     // });
     people.sort_by_key(|k| (-(k[0]), k[1]));
 
-    for cur in people.into_iter() {
+    for cur in people {
         let i = cur[1] as usize;
         result.insert(i, cur);
     }
